@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MaxiGaming – Gaming PCs aus Deutschland</title>
+<meta name="description" content="MaxiGaming: fertig konfigurierte Gaming-PCs, geprüft und versandfertig. Bezahlung sicher per Kreditkarte." />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo">
+      <img src="assets/logo.svg" alt="MaxiGaming" height="28" />
+    </a>
+    <nav class="main-nav">
+      <a href="#systeme">Systeme</a>
+      <a href="#vertrauen">Warum MaxiGaming</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow-line">Gaming-PCs · Made &amp; built in Germany</p>
+        <h1>Fertig konfiguriert.<br>Sofort spielbereit.</h1>
+        <p class="hero-sub">Vier feste Systeme, jedes einzeln zusammengebaut, getestet und mit Rechnung versendet. Keine endlosen Konfiguratoren – nur die Kombinationen, die wirklich etwas taugen.</p>
+        <a href="#systeme" class="btn btn-primary">Systeme ansehen</a>
+      </div>
+      <div class="hero-panel" aria-hidden="true">
+        <div class="panel-row">
+          <span class="panel-label">Auslieferung</span>
+          <span class="panel-value" data-count="24">0</span>
+          <span class="panel-unit">Std. Testlauf</span>
+        </div>
+        <div class="panel-row">
+          <span class="panel-label">Garantie</span>
+          <span class="panel-value" data-count="36">0</span>
+          <span class="panel-unit">Monate</span>
+        </div>
+        <div class="panel-row">
+          <span class="panel-label">Modelle</span>
+          <span class="panel-value" data-count="4">0</span>
+          <span class="panel-unit">feste Systeme</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="systeme" class="products">
+    <div class="wrap">
+      <h2>Unsere Systeme</h2>
+      <p class="section-sub">Jedes System ist so konfiguriert, wie wir es selbst kaufen würden. Direkt bestellbar, keine Konfiguration nötig.</p>
+      <div id="product-grid" class="product-grid">
+        <!-- populated by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <section id="vertrauen" class="trust">
+    <div class="wrap trust-row">
+      <div class="trust-item">
+        <strong>Zusammengebaut in Deutschland</strong>
+        <span>Jedes System wird von Hand montiert und einzeln geprüft.</span>
+      </div>
+      <div class="trust-item">
+        <strong>Sichere Zahlung</strong>
+        <span>Kreditkartenzahlung über SumUp, verschlüsselt und PCI-konform.</span>
+      </div>
+      <div class="trust-item">
+        <strong>36 Monate Garantie</strong>
+        <span>Auf alle Systeme, inklusive kostenlosem Support per E-Mail.</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt" class="contact">
+    <div class="wrap">
+      <h2>Fragen zu einem System?</h2>
+      <p class="section-sub">Schreib uns – wir antworten werktags innerhalb von 24 Stunden.</p>
+      <a class="btn btn-outline" href="mailto:info@maxigaming.de">info@maxigaming.de</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- Checkout overlay -->
+<div id="checkout-overlay" class="checkout-overlay" hidden>
+  <div class="checkout-box">
+    <button id="checkout-close" class="checkout-close" aria-label="Schließen">×</button>
+    <h3 id="checkout-title">Bestellung</h3>
+    <p id="checkout-summary" class="checkout-summary"></p>
+    <div id="checkout-status" class="checkout-status">Zahlung wird vorbereitet …</div>
+    <div id="sumup-card"></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <img src="assets/logo.svg" alt="MaxiGaming" height="20" />
+    <p>&copy; <span id="year"></span> MaxiGaming. Alle Preise inkl. MwSt., zzgl. Versand.</p>
+  </div>
+</footer>
+
+<script src="https://gateway.sumup.com/gateway/ecom/card/v2/sdk.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
