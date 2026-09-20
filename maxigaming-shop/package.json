@@ -1,7 +1,0 @@
-{
-  "name": "maxigaming-shop",
-  "private": true,
-  "dependencies": {
-    "@netlify/blobs": "^8.2.0"
-  }
-}
